@@ -1,2 +1,2 @@
-# techdegree-project-3
+# Techdegree Project 3
  An Online Registration Form
