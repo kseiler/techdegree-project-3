@@ -5,62 +5,100 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Code Review | Newsletter Signup</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <nav>
+    <h1 class="brand">The Code Review</h1>
+  </nav>
   <header>
-    <nav>
-      <h1 class="brand">The Code Review</h1>
-    </nav>
-    <h2>Signup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+    <section class="container">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </section>
   </header>
   <main>
-    <form action="">
-      <fieldset>
+    <form class="container">
+      <fieldset id="contact-info">
         <legend>Contact Information</legend>
-        <label for="full-name">Full Name</label>
-        <input type="text" name="user-name" id="full-name" placeholder="Required" required>
-        <label for="email">Email Adress</label>
-        <input type="email" name="user-email" id="email" placeholder="Required" required>
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="user-phone" id="phone">
-        <label for="address">Street Address</label>
-        <input type="text" name="user-address" id="address">
-        <label for="city">City</label>
-        <input type="text" name="user-city" id="city">
-        <label for="state">State</label>
-        <select name="user-state" id="state">
-          <option value="wa">Washington</option>
-          <option value="il">Illinois</option>
-          <option value="or">Oregon</option>
-          <option value="ca">California</option>
-        </select>
-        <label for="zip">Zip Code</label>
-        <input type="text" name="user-zip" id="zip">
+        <div class="group">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="user-name" id="full-name" placeholder="Required" required>
+        </div>
+        <div class="group">
+          <label for="email">Email Adress</label>
+          <input type="email" name="user-email" id="email" placeholder="Required" required>
+        </div>
+        <div class="group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="user-phone" id="phone" placeholder="(XXX) XXX-XXXX">
+        </div>
+        <div class="group">
+          <label for="address">Street Address</label>
+          <input type="text" name="user-address" id="address">
+        </div>
+        <div class="group">
+          <label for="city">City</label>
+          <input type="text" name="user-city" id="city" placeholder="e.g. Chicago">
+        </div>
+        <div class="group">
+          <label for="state">State</label>
+          <select name="user-state" id="state">
+            <option value="" disabled selected>Choose State</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>           
+          </select>
+        </div>
+        <div class="group">
+          <label for="zip">Zip Code</label>
+          <input type="text" name="user-zip" id="zip">
+        </div>
       </fieldset>
-      <fieldset>
+      <fieldset id="newsletter">
         <legend>Newsletter</legend>
-        <p>Select the newsletters you would like to receive</p>
-        <input type="checkbox" name="newsletter-type" id="html-news">
-        <label for="html-news">HTML News</label>
-        <input type="checkbox" name="newsletter-type" id="css-news">
-        <label for="css-news">CSS News</label>
-        <input type="checkbox" name="newsletter-type" id="javascript-news">
-        <label for="javascript-news">Javascript News</label>
-        
-        <p>Newsletter format</p>
-        <input type="radio" name="newsletter-format" id="html">
-        <label for="html">HTML</label>
-        <input type="radio" name="newsletter-format" id="plain-text">
-        <label for="plain-text">Plain text</label>
-
-        <p>Other topics you'd like to hear about</p>
-        <textarea name="newsletter-topics" id="topics" cols="30" rows="10"></textarea>
+        <div>
+          <p>Select the newsletters you would like to receive</p>
+          <div class="pair">
+            <input type="checkbox" name="newsletter-type" id="html-news">
+            <label for="html-news">HTML News</label>
+          </div>
+          <div class="pair">
+            <input type="checkbox" name="newsletter-type" id="css-news">
+            <label for="css-news">CSS News</label>
+          </div>
+          <div class="pair">
+            <input type="checkbox" name="newsletter-type" id="javascript-news">
+            <label for="javascript-news">Javascript News</label>
+          </div>
+        </div>
+        <div>
+          <p>Newsletter format</p>
+          <div class="pair">
+            <input type="radio" name="newsletter-format" id="html">
+            <label for="html">HTML</label>
+          </div>
+          <div class="pair">
+            <input type="radio" name="newsletter-format" id="plain-text">
+            <label for="plain-text">Plain text</label>
+          </div>
+        </div>
+        <div>
+          <p>Other topics you'd like to hear about</p>
+          <textarea name="newsletter-topics" id="topics" rows="5"></textarea>
+        </div>
       </fieldset>
+      <input class="button-primary" type="submit" value="Sign Up">
     </form>
   </main>
   <footer>
-
+    <div class="container">
+      <p><em>Copyright The Code Review</em></p>
+    </div>
   </footer>
 </body>
 </html>
