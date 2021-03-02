@@ -80,9 +80,11 @@ textarea {
 }
 
 footer { 
+  font-size: .875rem;
   text-align: center;
   padding: 40px 0;
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 50%);
+  color: white;
 }
 
 /*=============================================
@@ -182,11 +184,6 @@ textarea:focus {
 
 #newsletter p {
   margin: 0 0 10px;
-}
-
-footer p {
-  opacity: .5;
-  font-size: .875rem;
 }
 
 
